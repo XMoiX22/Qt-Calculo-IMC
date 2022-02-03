@@ -93,7 +93,7 @@ void Persona::calcularIMC()
 {
     Persona::IMC = Persona::peso/(Persona::altura*Persona::altura);
 
-    //cambia los colores de la apreciacion y el texto asi como tmabien ubica la barra del imc
+    //cambia los colores de la apreciacion y el texto asi como tmabien ubica la barra del imc, y se agrego (tr) para las traducciones de las palabras.
     if(Persona::IMC < 15 ){
         ui->label_27->setText(tr("Bajo peso"));
         ui->label_27->setStyleSheet("color: rgb(0, 0, 0);");

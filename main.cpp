@@ -1,3 +1,10 @@
+/*
+ * Abdiel Moises Jimenez Perez
+ * CI: 1727571752
+ * Examen Prorgramacion Orientada a Objetos
+ * Grupo 3
+ * Calculo Indice Masa Corporal
+ */
 #include "mainwindow.h"
 #include "persona.h"
 #include <QApplication>
