@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>recursos/indice-de-masa-corporal.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>calculo-imc_en.qm</file>
+        <file>calculo-imc_ch.qm</file>
+    </qresource>
+</RCC>

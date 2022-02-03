@@ -11,9 +11,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = indiceMasaCorporal
 TEMPLATE = app
 
-TRANSLATIONS = Translate_EN
-Translate_CN.ts
-
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -29,18 +26,25 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     persona.cpp
 
 HEADERS += \
-        mainwindow.h \
     persona.h
 
 FORMS += \
-        mainwindow.ui \
     persona.ui
+
+TRANSLATIONS = calculo-imc_ch.ts \
+                calculo-imc_en.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    recursos.qrc
+
+DISTFILES += \
+    calculo-imc_ch.qm \
+    calculo-imc_en.qm
